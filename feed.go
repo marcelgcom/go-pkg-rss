@@ -1,6 +1,7 @@
 /*
- Author: jim teeuwen <jimteeuwen@gmail.com>
- Dependencies: go-pkg-xmlx (http://github.com/jteeuwen/go-pkg-xmlx)
+ Original Author: jim teeuwen <jimteeuwen@gmail.com>
+ Temporary Maintenar: Yasuhiro Matsumoto <mattn.jp@gmail.com>
+ Dependencies: go-pkg-xmlx (http://github.com/mattn/go-pkg-xmlx)
 
  This package allows us to fetch Rss and Atom feeds from the internet.
  They are parsed into an object tree which is a hybrid of both the RSS and Atom
@@ -32,7 +33,7 @@ import (
 	"strings"
 	"time"
 
-	xmlx "github.com/jteeuwen/go-pkg-xmlx"
+	xmlx "github.com/mattn/go-pkg-xmlx"
 )
 
 type UnsupportedFeedError struct {
