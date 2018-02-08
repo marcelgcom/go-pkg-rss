@@ -9,7 +9,7 @@ Supported feeds are:
 - Atom 1.0
 
 The package allows us to maintain cache timeout management. This prevents us
-from querying the servers for feed updates too often and risk ip bans. Apart 
+from querying the servers for feed updates too often and risk ip bans. Apart
 from setting a cache timeout manually, the package also optionally adheres to
 the TTL, SkipDays and SkipHours values specified in the feeds themselves.
 
@@ -30,10 +30,10 @@ an example of how this works.
 
 ## DEPENDENCIES
 
-[github.com/jteeuwen/go-pkg-xmlx](http://github.com/jteeuwen/go-pkg-xmlx)
+[github.com/mattn/go-pkg-xmlx](http://github.com/mattn/go-pkg-xmlx)
 
 ## USAGE
 
 
-An idiomatic example program can be found in [testdata/example.go](https://github.com/jteeuwen/go-pkg-rss/blob/master/testdata/example.go).
+An idiomatic example program can be found in [testdata/example.go](https://github.com/mattn/go-pkg-rss/blob/master/testdata/example.go).
 
