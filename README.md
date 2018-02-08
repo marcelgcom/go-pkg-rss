@@ -1,5 +1,11 @@
 # RSS
 
+*NOTICE*
+
+This is forked repository that was provided from github.com/jteeuwen/go-pkg-rss.
+
+See https://www.reddit.com/r/golang/comments/7vv9zz/popular_lib_gobindata_removed_from_github_or_why/
+
 This package allows us to fetch Rss and Atom feeds from the internet.
 They are parsed into an object tree which is a hybrid of both the RSS and Atom
 standards.
@@ -9,7 +15,7 @@ Supported feeds are:
 - Atom 1.0
 
 The package allows us to maintain cache timeout management. This prevents us
-from querying the servers for feed updates too often and risk ip bans. Apart 
+from querying the servers for feed updates too often and risk ip bans. Apart
 from setting a cache timeout manually, the package also optionally adheres to
 the TTL, SkipDays and SkipHours values specified in the feeds themselves.
 
@@ -30,10 +36,10 @@ an example of how this works.
 
 ## DEPENDENCIES
 
-[github.com/jteeuwen/go-pkg-xmlx](http://github.com/jteeuwen/go-pkg-xmlx)
+[github.com/mattn/go-pkg-xmlx](http://github.com/mattn/go-pkg-xmlx)
 
 ## USAGE
 
 
-An idiomatic example program can be found in [testdata/example.go](https://github.com/jteeuwen/go-pkg-rss/blob/master/testdata/example.go).
+An idiomatic example program can be found in [testdata/example.go](https://github.com/mattn/go-pkg-rss/blob/master/testdata/example.go).
 
