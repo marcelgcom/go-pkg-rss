@@ -135,8 +135,14 @@ func (this *Feed) readRss2(doc *xmlx.Document) (err error) {
 
 		for _, item := range list {
 			i = new(Item)
+
 			i.Title = item.S(ns, "title")
 			i.Description = item.S(ns, "description")
+
+			i.Attributes = make(map[string]string)
+			for _, x := range item.Attributes {
+				i.Attributes[x.Name.Local] = x.Value
+			}
 
 			tl = item.SelectNodes(ns, "link")
 			for _, v := range tl {

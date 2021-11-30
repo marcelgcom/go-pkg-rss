@@ -8,6 +8,7 @@ import (
 
 type Item struct {
 	// RSS and Shared fields
+	Attributes  map[string]string
 	Title       string
 	Links       []*Link
 	Description string
